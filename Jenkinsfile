@@ -10,7 +10,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 cleanWs()
-                git branch: 'main',
+                git branch: 'master',
                     url: 'https://github.com/Balajiyoganantham/Flask_pipeline.git'
             }
         }
